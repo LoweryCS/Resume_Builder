@@ -36,6 +36,10 @@ function create() {
     
     if (email.includes("@"))
     {
+       alert("Please enter valid email address!");                
+    }
+    else
+    {
         hc += ('<h3>' + name + '</h3>\n<p>' + address + ' / ' + phone + '</p>\n');
         hc += ('<hr id="line" color="black" size="5" width="513px">\n');
         hc += ('<p id="left">CAREER\nOBJECTIVES</p>\n<p id="right">' + career + '</p>\n');
@@ -66,14 +70,7 @@ function create() {
 
 
         var flyWindow = window.open('about:blank','myPop','width=550,height=1000,left=200,top=200');
-        flyWindow.document.write(hc);
-        
-                
-    }
-    else
-    {
-        alert("Please enter valid email address!");
-        
+        flyWindow.document.write(hc);        
     }
     
 }
