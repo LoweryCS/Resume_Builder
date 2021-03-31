@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(157,106,201);
+   font-family: 'Righteous', cursive;
+    color: rgb(255,255,255);
+}
+
+#left {
+  clear:both;
+  width:200px;
+  float:left;    
+}
+
+#right {
+    width: 200px;
+    float:right;    
+    padding-bottom: 100px;
+}
+
+#line {
+    width: 100%;
+    float: left;
+    color: rgb(255,255,255);     
+}
