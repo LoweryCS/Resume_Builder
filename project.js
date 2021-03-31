@@ -34,11 +34,7 @@ var bref = document.getElementById("breference").value;
 function create() {    
     hc = ('<html>\n<head>\n<title>Welcome</title>\n<link rel="stylesheet" type="text/css" href="style.css" />\n<link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">\n<body>\n');
     
-    if (email.includes("@") === false)
-    {
-       alert("Please enter valid email address!");         
-    }
-    else
+    if (email.includes("@") === true)
     {
         hc += ('<h3>' + name + '</h3>\n<p>' + address + ' / ' + phone + '</p>\n');
         hc += ('<hr id="line" color="black" size="5" width="513px">\n');
@@ -71,6 +67,12 @@ function create() {
 
         var flyWindow = window.open('about:blank','myPop','width=550,height=1000,left=200,top=200');
         flyWindow.document.write(hc);
+        
+                
+    }
+    else
+    {
+        alert("Please enter valid email address!");
         
     }
     
