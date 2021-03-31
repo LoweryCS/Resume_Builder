@@ -34,7 +34,7 @@ var bref = document.getElementById("breference").value;
 function create() {    
     hc = ('<html>\n<head>\n<title>Welcome</title>\n<link rel="stylesheet" type="text/css" href="style.css" />\n<link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">\n<body>\n');
     
-    if (email.includes("@") === true)
+    if (email.includes("@"))
     {
         hc += ('<h3>' + name + '</h3>\n<p>' + address + ' / ' + phone + '</p>\n');
         hc += ('<hr id="line" color="black" size="5" width="513px">\n');
