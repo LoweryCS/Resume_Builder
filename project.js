@@ -120,7 +120,7 @@ function create() {
     else
     {
         var hc = '';
-        hc = ('<html>\n<head>\n<title>Welcome</title>\n<link rel="stylesheet" type="text/css" href="style.css" />\n<link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">\n<body>\n');
+        hc = ('<html>\n<head>\n<title>Welcome</title>\n<link rel="stylesheet" type="text/css" href="css/style.css" />\n<link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">\n<body>\n');
 
         hc += ('<h3>' + name + '</h3>\n<p>' + address + ' / ' + phone + '</p>\n<p>' + email + '</p>\n');
         hc += ('<hr id="line" color="black" size="5" width="513px">\n');
