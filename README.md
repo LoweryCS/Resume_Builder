@@ -1,7 +1,7 @@
 # Resume_Builder
 Website that uses JavaScript to create a resume template from user input which is then displayed in a new window.
 
--All user input will be formatted and styled in a separate browser window.
+-All user input will be formatted and styled in a separate browser window using a javascript file.
 
 -All fields must be filled in order to proceed.
 
