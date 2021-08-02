@@ -120,12 +120,12 @@ function create() {
     else
     {
         var hc = '';
-        hc = ('<html>\n<head>\n<title>Welcome</title>\n<link rel="stylesheet" type="text/css" href="style.css" />\n<link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">\n<body>\n');
+        hc = ('<html>\n<head>\n<title>Welcome</title>\n<link rel="stylesheet" type="text/css" href="css/style.css" />\n<link href="https://fonts.googleapis.com/css?family=Comfortaa|Righteous" rel="stylesheet">\n<body>\n');
 
         hc += ('<h3>' + name + '</h3>\n<p>' + address + ' / ' + phone + '</p>\n<p>' + email + '</p>\n');
         hc += ('<hr id="line" color="black" size="5" width="513px">\n');
         hc += ('<p id="left">CAREER\nOBJECTIVES</p>\n<p id="right">' + career + '</p>\n');
-        hc += ('<p id="left">PERSONAL\nDATA</p>\n<p id="right">' + personal + '</p>\n');
+        hc += ('<p id="left">PERSONAL\nSKILLS</p>\n<p id="right">' + personal + '</p>\n');
         hc += ('<p id="left">EDUCATION</p>\n<p id="right">' + education + '</p>\n');
         hc += ('<p id="left">EMPLOYMENT\nEXPERIENCE</p>\n');
         hc += ('<p id="left">' + sDate1 + ' - ' + eDate1 + '</p>\n<p id="right">' + employ1 + '</p>');
@@ -134,10 +134,10 @@ function create() {
         hc += ('<p id="left">' + sDate4 + ' - ' + eDate4 + '</p>\n<p id="right">' + employ4 + '</p>');
         if (pRef == "")
             {
-                hc += ('<p id="left">CHARACTER\nREFERENCE</p>\n<p id="right">Upon Request</p>');
+                hc += ('<p id="left">PERSONAL\nREFERENCE</p>\n<p id="right">Upon Request</p>');
             }
         else{
-                hc += ('<p id="left">CHARACTER\nREFERENCE</p>\n<p id="right">' + pRef + '</p>');    
+                hc += ('<p id="left">PERSONAL\nREFERENCE</p>\n<p id="right">' + pRef + '</p>');    
             }
 
         if (bRef == "")
@@ -152,6 +152,6 @@ function create() {
 
         var flyWindow = window.open('about:blank','myPop','width=550,height=1000,left=200,top=200');
         flyWindow.document.write(hc);
-        window.location.href=window.location.href;        
+        //window.location.href=window.location.href;        
     }    
 }
